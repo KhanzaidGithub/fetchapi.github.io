@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Tab change Detction</h2>
+    <script>
+        document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'hidden') {
+                console.log('Tab is inactive');
+                alert('Tab is inactive');
+            } else {
+                console.log('Tab is active');
+                alert('Tab is active');
+            }
+        });
+    </script>
+</body>
+
+</html>
