@@ -1,0 +1,50 @@
+#page3 {
+    height: 350vh;
+    width: 100%;
+    background-color: #efeae3;
+}
+
+.elem {
+    position: relative;
+    height: 130px;
+    width: 100;
+    /* background-color: orange; */
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+    align-items: center;
+    padding: 0vw 2vw;
+    border-top: 1px solid #00000037;
+    border-bottom: 1px solid #00000037;
+}
+
+.elem #overlay {
+    background-color: orange;
+    width: 100%;
+    height: 130px;
+    left: 0;
+    position: absolute;
+    top: -130px;
+    transition: all ease 0.2s;
+}
+
+.elem:hover #overlay {
+    top: 0px;
+}
+
+.elem h2 {
+    font-size: 3vw;
+    z-index: 2;
+}
+
+#fixed-img {
+    height: 65vh;
+    width: 25vw;
+    border-radius: 10px;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    z-index: 22;
+    background-color: red;
+    background-size: cover;
+}
